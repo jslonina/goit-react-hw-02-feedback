@@ -22,7 +22,7 @@ export class App extends Component {
     const sum = Object.values(this.state).reduce((pV, num) => {
       return (pV += num);
     }, 0);
-    const positiveSum = (this.state.good / sum).toFixed(2);
+    const positiveSum = ((this.state.good / sum)*100).toFixed(2);
     return Number(positiveSum);
   };
 
